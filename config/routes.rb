@@ -10,6 +10,6 @@ Tumblrtv::Application.routes.draw do
   match '/auth/failure' => 'sessions#failure'
 
   match '/login' => 'sessions#new', :as => :login
-  match '/logout' => 'sessions#destroy', :as => :logout
+  match '/signout' => 'sessions#destroy', :as => :signout
 
 end
